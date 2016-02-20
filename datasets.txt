@@ -1,0 +1,25 @@
+fredapi source: http://mortada.net/python-api-for-fred.html
+
+owners equivalent rent and rent of primary residence methodology (BLS): http://www.bls.gov/cpi/cpifacnewrent.pdf
+
+BLS home: http://www.bls.gov/home.htm
+
+- rent as a percent of income
+
+- dollar index
+
+- inflation levels (CPI-U) - can also use this to adjust costs & income data
+
+Other potential data sources:
+a) American Community Surveys - financial burden of renting (income and rental costs - contract rent, gross rent, asking rent)
+b) Decennial Census - financial burden of renting
+c) Joint center for housing studies of Harvard University
+d) US Census Bureau (median renter income)
+e) Moody's Economy.com - housing vacancy
+f) CPI-U rental index for primary index US Bureau of Labor Statistics
+g) MPF Research - annual cost of rent growth
+h) current population survey: median renter income
+i) US Department of Housing Urban Development: contract rent
+j) American Housing Survey: contract rent, rent of primary residence; gross rent
+
+Harvard study: http://www.jchs.harvard.edu/sites/jchs.harvard.edu/files/jchs_americas_rental_housing_2013_1_0.pdf
