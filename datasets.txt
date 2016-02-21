@@ -2,6 +2,8 @@ fredapi source: http://mortada.net/python-api-for-fred.html
 
 owners equivalent rent and rent of primary residence methodology (BLS): http://www.bls.gov/cpi/cpifacnewrent.pdf
 
+FRED provides monthly data on OER
+
 BLS home: http://www.bls.gov/home.htm
 
 - rent as a percent of income
@@ -10,16 +12,22 @@ BLS home: http://www.bls.gov/home.htm
 
 - inflation levels (CPI-U) - can also use this to adjust costs & income data
 
-Other potential data sources:
+Other potential data sources (disclaimer: most of these are only recorded annually - I would need monthly or quarterly):
 a) American Community Surveys - financial burden of renting (income and rental costs - contract rent, gross rent, asking rent)
 b) Decennial Census - financial burden of renting
 c) Joint center for housing studies of Harvard University
 d) US Census Bureau (median renter income)
 e) Moody's Economy.com - housing vacancy
 f) CPI-U rental index for primary index US Bureau of Labor Statistics
-g) MPF Research - annual cost of rent growth
-h) current population survey: median renter income
+g) MPF Research - annual cost of rent growth  *for pay
+h) current population survey: median renter income *same data source as #d,a: http://www.census.gov/programs-surveys/cps.html
 i) US Department of Housing Urban Development: contract rent
+HUD datasets: https://www.huduser.gov/portal/datasets/pdrdatas.html
 j) American Housing Survey: contract rent, rent of primary residence; gross rent
 
 Harvard study: http://www.jchs.harvard.edu/sites/jchs.harvard.edu/files/jchs_americas_rental_housing_2013_1_0.pdf
+
+Also include:
+Monthly income and expenditure datasets (FRED)... real disposable personal income
+personal consumption expenditures: nondurable goods
+contributions to percent change in real GDP... personal consumption expenditures: services: housing and utilities

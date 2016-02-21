@@ -17,6 +17,7 @@ figsize(20, 5)
 
 oer=fred.get_series('CUSR0000SEHC01',observation_start='2002-01-01') #owner equivalent rent
 real_rent=fred.get_series('CUSR0000SEHA',observation_start='2002-01-01')
+pce=fred.get_series('PCE',observation_start='2002-01-01')
 
 #not so simple to plot datetime in matplot lib... typically requires a conversion to strings
 
@@ -34,6 +35,8 @@ ax.plot_date(TA, A, 'b--')
 ax.plot_date(TB, B, 'g:')
 - done playing around
 '''
+plt.plot_date(pce.index[-60:],pce[-60:])
+pce[-10:]
 
 type(real_rent.index)
 
@@ -49,6 +52,7 @@ ax.plot_date(oer.index,oer,fmt='-',color='green',label='owner equivalent rent') 
 ax.plot_date(oer.index,real_rent,fmt='-',color='red',label='rent of primary residence')
 ax.plot_date(oer.index,retailSales,fmt='-',color='purple',label='retail sales')
 ax.plot_date(oer.index,totRetailSales[0:168],fmt='-',color='orange',label='tot retail sales') #doesn't work because this series has one more observation than the others
+ax.plot_date(pce.index,pce,fmt='-',color='orange',label='PCE')
 plt.title('rent vs. retail')
 legend = ax.legend(loc='middle right', shadow=True)
 #frame = legend.get_frame()
