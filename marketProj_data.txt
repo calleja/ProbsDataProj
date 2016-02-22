@@ -1,4 +1,14 @@
-Bond Data: Investment Grade, HIgh Yield
+Bond Data: Investment Grade Corporates, HIgh Yield
 Index prices (SPY)
 USD/JPY, USD/EUR
 Commodities: Continuous Futures
+
+SPDJ/SPUSG2AT - SP Investment Grade
+MOODY/DBAAYLD - Moody's Baa Corporate Yield
+MOODY/DAAAYLD - Moody's Aaa Corporate Yield
+ML/AAOAS - ML AA-rated Bond Index OAS
+CHRIS/CME_SP1 - SP500 Continuous front month 
+CHRIS/CME_JY1 - yen futures continuous contract... check prices
+ML/CCCY - CCC junk bonds
+ML/HYOAS - US High Yield corporate bond index OAS
+ML/CCCTRI - US CCC Bond total return index
