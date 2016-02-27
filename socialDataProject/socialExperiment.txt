@@ -1,0 +1,22 @@
+predict number of deaths for a county for a given year...
+cancer, population of county, industries contained within county
+
+Industries by County:
+US Census County Business Patterns: 
+https://www.census.gov/econ/cbp/download/
+cbp13co file layout: https://www.census.gov/econ/cbp/download/noise_layout/County_Layout.txt
+NAICS code
+
+cancer mortality or incidence rate by county: 
+- look at "cancer profiles" and "cancer data providers": http://statecancerprofiles.cancer.gov/resources/
+National Cancer Institute - table generator for counties: http://statecancerprofiles.cancer.gov/incidencerates/index.php
+United States Cancer Statistics*
+CDC information request: nccdcpcinfo@cdc.gov
+
+Population of a county:
+
+Proportion of elderly:
+
+Proportion insured/uninsured||unemployment rate||median income
+BLS quarterly census of employment and wages: http://www.bls.gov/cew/
+*data has been downloaded
