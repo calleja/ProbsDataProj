@@ -1,0 +1,12 @@
+NAICS codes of interest:
+
+all those beginning with 324 - refining, oil manufacturing
+
+325 - petro manufacturing, gas manufacturing, fertilizer, pesticide, adhesive, paint, soap, polish, plastic bags 
+
+326 - plastic durables, tire manufacturing, rubber
+
+all those beginning with 21  - mining
+
+221112 - fossil fuel electric power generation
+
