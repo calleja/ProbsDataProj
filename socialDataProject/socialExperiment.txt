@@ -1,0 +1,30 @@
+predict number of deaths for a county for a given year...
+cancer, population of county, industries contained within county
+
+Industries by County:
+US Census County Business Patterns: 
+https://www.census.gov/econ/cbp/download/
+cbp13co file layout: https://www.census.gov/econ/cbp/download/noise_layout/County_Layout.txt
+NAICS code
+Questions on aggregation: the .txt file contains only 2MM records - less than the number of outstanding physical locations of companies in 2013. Is the data aggregated? The field description file contains a field "Total Number of Establishments" - this could be a count field - counting the number of locations of that NAICS code in the county - or can merely be the number of establishments owned and operated by the same company.
+Definition of establishment per the Census Bureau: An establishment is a single physical location at which business is conducted or services or industrial operations are performed. It is not necessarily identical with a company or enterprise, which may consist of one or more establishments. When two or more activities are carried on at a single location under a single ownership, all activities generally are grouped together as a single establishment. The entire establishment is classified on the basis of its major activity and all data are included in that classification.
+
+Establishment counts represent the number of locations with paid employees any time during the year. This series excludes government establishments except for wholesale liquor establishments (NAICS 4248), retail liquor stores (NAICS 44531), Federally-chartered savings institutions (NAICS 522120), Federally-chartered credit unions (NAICS 522130), and hospitals (NAICS 622).
+
+cancer mortality or incidence rate by county: 
+- look at "cancer profiles" and "cancer data providers": http://statecancerprofiles.cancer.gov/resources/
+National Cancer Institute - table generator for counties: http://statecancerprofiles.cancer.gov/incidencerates/index.php
+United States Cancer Statistics*
+CDC information request: nccdcpcinfo@cdc.gov
+
+Population of a county:
+
+Proportion of elderly:
+
+Proportion insured/uninsured||unemployment rate||median income
+BLS quarterly census of employment and wages: http://www.bls.gov/cew/
+*data has been downloaded
+
+Weaknesses: workers travel to work; people engage in different dietary habits.
+
+Introduction of pollutants is typically from air, water and food. Water is filtered, but harsh metals cannot be filtered. Industries can emit to water streams that move emissions to other areas of the country.
