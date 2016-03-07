@@ -1,3 +1,5 @@
+/Documents/CUNY/probs_stats/dataProject/socialDataProject
+
 predict number of deaths for a county for a given year...
 cancer, population of county, industries contained within county
 
@@ -12,10 +14,18 @@ Definition of establishment per the Census Bureau: An establishment is a single 
 Establishment counts represent the number of locations with paid employees any time during the year. This series excludes government establishments except for wholesale liquor establishments (NAICS 4248), retail liquor stores (NAICS 44531), Federally-chartered savings institutions (NAICS 522120), Federally-chartered credit unions (NAICS 522130), and hospitals (NAICS 622).
 
 cancer mortality or incidence rate by county: 
-- look at "cancer profiles" and "cancer data providers": http://statecancerprofiles.cancer.gov/resources/
+- look at "cancer profiles" and "cancer data providers": http://statecancerprofiles.cancer.gov/resources/* - provides interactive map
 National Cancer Institute - table generator for counties: http://statecancerprofiles.cancer.gov/incidencerates/index.php
 United States Cancer Statistics*
 CDC information request: nccdcpcinfo@cdc.gov
+
+Incidence information
+- read about methodologies and data sources used by statecancerprofiles and the CDC and US Cancer statistics: 
+a) http://www.cdc.gov/cancer/npcr/uscs/technical_notes/data_sources/incidence.htm
+b) http://www.cdc.gov/cancer/npcr/uscs/technical_notes/interpreting/incidence.htm
+c) http://www.cdc.gov/cancer/npcr/uscs/technical_notes/stat_methods/rates.htm
+- SEER also has incidence information by county but only for a few counties... the majority are left out; I may wish to contact SEER
+Incidence rates are provided for states with cancer registries whose data have met the criteria required for inclusion in the US Cancer Statistics (http://www.cdc.gov/cancer/npcr/uscs/).
 
 Population of a county:
 
@@ -28,3 +38,7 @@ BLS quarterly census of employment and wages: http://www.bls.gov/cew/
 Weaknesses: workers travel to work; people engage in different dietary habits.
 
 Introduction of pollutants is typically from air, water and food. Water is filtered, but harsh metals cannot be filtered. Industries can emit to water streams that move emissions to other areas of the country.
+
+SEER Data: SEER*Stat client-server system and/or download the files which make up the SEER Research Data DVD
+Username: 14550-Nov2014
+Password: qPaqspfA
