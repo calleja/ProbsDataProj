@@ -5,6 +5,7 @@ b) NAICS code can be 3-,4-,5-
 '''
 library(stringr)
 library(plyr);library(ggplot2)
+#save.image('~/Documents/CUNY/probs_stats/dataProject/socialDataProject/naics.RData')
 diry<-'~/Documents/CUNY/probs_stats/dataProject/socialDataProject/dataTables/cbp13co.txt'
 
 test<-read.table(diry,sep=",",header=TRUE)
@@ -35,10 +36,11 @@ dirty<-rbind(oil,fert,plastic,mine,fossil)
 
 #aggregate number of establishments by county
 aggd<-ddply(dirty,.(fipscty), function(x) sum(x$est))
+names(aggd)<-c('fips_county','ests')
 
 #summary statistics on 'aggd'
-summary(aggd$V1)
-ggplot(aggd,aes(x=V1))+geom_density()
+summary(aggd$ests)
+ggplot(aggd,aes(x=ests))+geom_density()
 
 #workspace cleanup
 kinder<-ls()

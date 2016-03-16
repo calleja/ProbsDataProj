@@ -4,14 +4,15 @@ predict number of deaths for a county for a given year...
 cancer, population of county, industries contained within county
 
 Industries by County:
-US Census County Business Patterns: 
-https://www.census.gov/econ/cbp/download/
+US Census County Business Patterns (ideally will find data for 2011; the cancer incidence data is through 2012): 
+https://www.census.gov/econ/cbp/download/ ... https://www.census.gov/econ/cbp/definitions.htm
 cbp13co file layout: https://www.census.gov/econ/cbp/download/noise_layout/County_Layout.txt
-NAICS code
+NAICS code: http://www.naics.com/six-digit-naics/?code=3133
 Questions on aggregation: the .txt file contains only 2MM records - less than the number of outstanding physical locations of companies in 2013. Is the data aggregated? The field description file contains a field "Total Number of Establishments" - this could be a count field - counting the number of locations of that NAICS code in the county - or can merely be the number of establishments owned and operated by the same company.
 Definition of establishment per the Census Bureau: An establishment is a single physical location at which business is conducted or services or industrial operations are performed. It is not necessarily identical with a company or enterprise, which may consist of one or more establishments. When two or more activities are carried on at a single location under a single ownership, all activities generally are grouped together as a single establishment. The entire establishment is classified on the basis of its major activity and all data are included in that classification.
 
-Establishment counts represent the number of locations with paid employees any time during the year. This series excludes government establishments except for wholesale liquor establishments (NAICS 4248), retail liquor stores (NAICS 44531), Federally-chartered savings institutions (NAICS 522120), Federally-chartered credit unions (NAICS 522130), and hospitals (NAICS 622).
+Establishment counts represent the number of locations with paid employees any time during the year. This series excludes government establishments except for wholesale liquor establishments (NAICS 4248), retail liquor stores (NAICS 44531), Federally-chartered savings institutions (NAICS 522120), Federally-chartered credit unions (NAICS 522130), and hospitals (NAICS 622). Methodology: https://www.census.gov/econ/cbp/methodology.htm
+2011 data: https://www.census.gov/econ/cbp/download/11_data/
 
 cancer mortality or incidence rate by county: 
 - look at "cancer profiles" and "cancer data providers": http://statecancerprofiles.cancer.gov/resources/* - provides interactive map
@@ -21,11 +22,20 @@ CDC information request: nccdcpcinfo@cdc.gov
 
 Incidence information
 - read about methodologies and data sources used by statecancerprofiles and the CDC and US Cancer statistics: 
-a) http://www.cdc.gov/cancer/npcr/uscs/technical_notes/data_sources/incidence.htm
+a) http://www.cdc.gov/cancer/npcr/uscs/technical_notes/data_sources/incidence.htm****
 b) http://www.cdc.gov/cancer/npcr/uscs/technical_notes/interpreting/incidence.htm
 c) http://www.cdc.gov/cancer/npcr/uscs/technical_notes/stat_methods/rates.htm
-- SEER also has incidence information by county but only for a few counties... the majority are left out; I may wish to contact SEER
+d) http://statecancerprofiles.cancer.gov/interpretrankings.html
+- SEER also has incidence information by county but only for a few counties... the majority are left out; I may wish to contact SEER: http://www.cdc.gov/cancer/npcr/uscs/contact_information.htm
 Incidence rates are provided for states with cancer registries whose data have met the criteria required for inclusion in the US Cancer Statistics (http://www.cdc.gov/cancer/npcr/uscs/).
+Access to data at the state level: http://www.cdc.gov/cancer/npcr/data_access/
+
+States can report data to any national registry independently, and so inclusion in one registry does not imply inclusion in others. Registries observed: CDC (via the National Program of Cancer Registries program), National Cancer Institute (via the SEER program).
+
+States contribute cancer data to these charts if their registries collected 90% or more of the cancers diagnosed. Because states vary in their completeness from 90-100%, rankings may vary to a minor extent because of differences in reporting completeness.
+The primary source of data on cancer incidence is medical records. Data is then sent by participating hospitals to a regional or state registry. Hospital data, as reported to these programs, adheres to codes and principles in NAACCR.
+
+Non-reportable cancers and cancers in patients of unknown sex or age were omitted from all calculations, but cases of unknown race were included in the “All Races” category.
 
 Population of a county:
 
@@ -33,7 +43,13 @@ Proportion of elderly:
 
 Proportion insured/uninsured||unemployment rate||median income
 BLS quarterly census of employment and wages: http://www.bls.gov/cew/
+API: http://www.bls.gov/developers/
 *data has been downloaded
+API Key BLS: 9f95212a8e014980810d80c762b0d178
+IRS data: https://www.irs.gov/uac/SOI-Tax-Stats-County-Data-2012**
+The problem with IRS data is that the file contains frequencies, aggregates, but not statistics... I'm after medians.
+**data has been downloaded
+THe FIPS code in this file must be derived by concatenating the StateFIPS and CountyFIPS
 
 Weaknesses: workers travel to work; people engage in different dietary habits.
 
